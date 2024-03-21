@@ -12,17 +12,29 @@ function Works() {
         controls.forEach((control, index) => {
             control.start({
                 width: 0,
-                transition: { duration: 0.5 }
+                transition: { duration: 0.8 }
             });
         });
-    }, []); // Empty dependency array ensures this effect runs only once, on mount
+    }, [controls]);
 
     const handleHover = (index) => {
-        controls[index].start({
-            width: "100%",
-            transition: { duration: 0.5 }
+        const defaultWidth = "60%";
+        const fullWidth = "100%";
+        controls.forEach((control, i) => {
+            if (i === index) {
+                control.start({
+                    width: index === 2 ? fullWidth : defaultWidth,
+                    transition: { duration: 0.8 }
+                });
+            } else {
+                control.start({
+                    width: 0,
+                    transition: { duration: 0.8 }
+                });
+            }
         });
     };
+
 
     const handleHoverEnd = (index) => {
         controls[index].start({
@@ -36,26 +48,28 @@ function Works() {
 
             <div className='flex flex-col font-bold text-6xl md:p-40  text-[#B7AB98]'>
                 <div className='mx-5'>
-                    <div className='text-3xl font-normal tracking-widest leading-[11vh] md:leading-[6vw]'>MY WORKS {"()"}</div>
+                    <div className='text-3xl font-normal inline-block tracking-widest leading-[11vh] md:leading-[6vw]'>MY WORKS {"()"}</div>
                     {works.map((work, index) => (
-                        <motion.div
-                            key={index}
-                            className='md:text-[15.5vh] text-4xl tracking-widest md:leading-[11vw] leading-[6vh]'
-                            whileHover={{ backgroundColor: '#4ADE80', color: '#fff' }}
-                            animate={{
-                                ...controls[index],
-                                transition: { delay: index * 0.3, duration: 0.5 } // Adjust delay value as needed
-                            }}
-                            onHoverStart={() => handleHover(index)}
-                            onHoverEnd={() => handleHoverEnd(index)}
-                        >
-                            {work}
+                        <div key={index} className="mb-4 ">
                             <motion.div
-                                className='line w-full h-1 bg-[#B7AB98]'
-                                animate={controls[index]}
-                                initial={{ width: 0 }}
-                            />
-                        </motion.div>
+                                className='md:text-[15vh]  text-4xl tracking-wide border border-2-[#B7AB98] md:leading-[11vw] leading-[6vh]'
+                                whileHover={{ backgroundColor: '#4ADE80', color: '#fff' }}
+                                animate={{
+                                    ...controls[index],
+                                    transition: { delay: index * 0.3, duration: 0.5 } // Adjust delay value as needed
+                                }}
+                                onClick={() => { handleHover(index) }}
+                                onHoverStart={() => handleHover(index)}
+                                onHoverEnd={() => handleHoverEnd(index)}
+                            >
+                                {work}
+                                <motion.div
+                                    className='line w-full h-1 bg-[#B7AB98]'
+                                    animate={controls[index]}
+                                    initial={{ width: 0 }}
+                                />
+                            </motion.div>
+                        </div>
                     ))}
                 </div>
             </div>

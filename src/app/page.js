@@ -12,7 +12,7 @@ import Works from "./components/Works";
 
 export default function Home() {
   return (
-    <div className="md:min-h-screen max-w-wcreen bg-[#090809]">
+    <div className="md:min-h-screen max-w-wcreen px-3 md:px-0 bg-[#090809]">
       <Navbar />
       <Landing />
       <Left />

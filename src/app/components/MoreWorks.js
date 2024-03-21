@@ -134,6 +134,7 @@ function MoreWorks() {
             <div className='min-h-screen flex flex-col font-bold md:text-6xl text-3xl md:px-40 pb-24 text-[#B7AB98]'>
                 <div className='mx-5'>
                     <div className='text-3xl tracking-widest md:leading-[6vw] leading-[16vh]'>TECHNOLOGIES {"()"}</div>
+
                     {tech.map((work, index) => (
                         <motion.div
                             key={work}
@@ -143,6 +144,7 @@ function MoreWorks() {
                                 ...controls,
                                 transition: { delay: index * 0.3, duration: 0.5 } // Adjust delay value as needed
                             }}
+
                             onHoverStart={handleHover}
                             onHoverEnd={handleHoverEnd}
                         >
@@ -154,6 +156,9 @@ function MoreWorks() {
                             />
                         </motion.div>
                     ))}
+
+
+
                     <div className='w-full h-1 text-[#4ADE80]'>
                         <div className=' text-right'>and many more...</div>
                     </div>
