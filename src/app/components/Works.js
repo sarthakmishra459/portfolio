@@ -1,10 +1,10 @@
 "use client"
 import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import { MaskContainer } from './ui/svg-mask-effect';
+
 
 function Works() {
-    const works = ["TRADING-DAPP", "MUSICIA", "CROWDFUNDING DAPP"];
+    const works = ["TRADING-DAPP", "ZUNE", "CROWDFUNDING DAPP"];
     const controls = [useAnimation(), useAnimation(), useAnimation()];
 
     useEffect(() => {

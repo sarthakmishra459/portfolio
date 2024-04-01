@@ -112,7 +112,7 @@ function MoreWorks() {
                                 </div>
                                 {hoveredWork === index && (
                                     <div
-                                        className="fixed"
+                                        className="fixed bg-cover bg-center"
                                         style={{
                                             top: mousePosition.y + "px",
                                             left: mousePosition.x + "px",
@@ -121,7 +121,7 @@ function MoreWorks() {
                                         <img
                                             src={imgs[index]?.image}
                                             alt="User Image"
-                                            className="w-48 h-48  rounded-full object-cover"
+                                            className="w-48 h-48  rounded-full object-cover object-center"
                                         />
                                     </div>
                                 )}

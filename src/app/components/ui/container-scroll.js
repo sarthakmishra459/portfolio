@@ -87,7 +87,7 @@ export const Card = ({
                 {users.map((user, idx) => (
                     <motion.div
                         key={`user-${idx}`}
-                        className="bg-white w-full rounded-md cursor-pointer relative"
+                        className="bg-white w-full rounded-md bg-center cursor-pointer relative"
 
                         whileHover={{
                             boxShadow:
@@ -96,7 +96,7 @@ export const Card = ({
                     >
                         <img
                             src={user.image}
-                            className=" h-full w-full object-cover   "
+                            className=" h-full w-full object-center "
                             alt="thumbnail"
                         />
                     </motion.div>
