@@ -12,7 +12,7 @@ function MoreWorks() {
             users: [{
                 name: "Manu Arora",
                 designation: "Founder, Algochurn",
-                image: "https://gcdnb.pbrd.co/images/MHc0Fxn03zi3.png?o=1",
+                image: "./trading.png",
                 badge: "Mentor",
             }]
         },
@@ -23,7 +23,7 @@ function MoreWorks() {
             users: [{
                 name: "Manu Arora",
                 designation: "Founder, Algochurn",
-                image: "https://gcdnb.pbrd.co/images/pGHECMGKdAVd.png?o=1",
+                image: "./drive.png",
 
                 badge: "Mentor",
             }]
@@ -35,7 +35,7 @@ function MoreWorks() {
             users: [{
                 name: "Manu Arora",
                 designation: "Founder, Algochurn",
-                image: "https://gcdnb.pbrd.co/images/wUQaS5n9oes8.png?o=1",
+                image: "./incognito.png",
 
                 badge: "Mentor",
             }]
@@ -176,19 +176,19 @@ export const users = [
     {
         name: "Manu Arora",
         designation: "Founder, Algochurn",
-        image: "https://gcdnb.pbrd.co/images/MHc0Fxn03zi3.png?o=1",
+        image: "./trading.png",
         badge: "Mentor",
     },
     {
         name: "Manu Arora",
         designation: "Founder, Algochurn",
-        image: "https://gcdnb.pbrd.co/images/pGHECMGKdAVd.png?o=1",
+        image: "./drive.png",
         badge: "Mentor",
     },
     {
         name: "Manu Arora",
         designation: "Founder, Algochurn",
-        image: "https://gcdnb.pbrd.co/images/wUQaS5n9oes8.png?o=1",
+        image: "./incognito.png",
         badge: "Mentor",
     }
 ];
@@ -196,19 +196,19 @@ export const imgs = [
     {
         name: "Manu Arora",
         designation: "Founder, Algochurn",
-        image: "https://gcdnb.pbrd.co/images/MHc0Fxn03zi3.png?o=1",
+        image: "./trading.png",
         badge: "Mentor",
     },
     {
         name: "Manu Arora",
         designation: "Founder, Algochurn",
-        image: "https://gcdnb.pbrd.co/images/pGHECMGKdAVd.png?o=1",
+        image: "./drive.png",
         badge: "Mentor",
     },
     {
         name: "Manu Arora",
         designation: "Founder, Algochurn",
-        image: "https://gcdnb.pbrd.co/images/wUQaS5n9oes8.png?o=1",
+        image: "./incognito.png",
         badge: "Mentor",
     }
 ];
