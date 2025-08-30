@@ -2,7 +2,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 function Marquee() {
-    const skills = ["Next.Js", "TailwindCSS", "React.Js", "Node.Js", "Express.Js", "MongoDb", "Ethers.Js", "Anchor", "MySql", "Rust", "C++", "Java", "Python "];
+    const skills = ["Next.Js", "TailwindCSS", "React.Js", "Node.Js", "Express.Js", "MongoDb","MySql", "C++", "Java", "Python "];
     return (
         <div id='marquee'>
             <div className='w-full py-10 rounded-tl-3xl rounded-tr-3xl  md:h-[70vh]  h-[50vh] bg-[#4ADE80]'>

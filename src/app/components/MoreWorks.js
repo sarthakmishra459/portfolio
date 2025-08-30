@@ -6,43 +6,43 @@ import { ContainerScroll2 } from './ui/container-screen-2';
 function MoreWorks() {
     const works = [
         {
-            name: "TRADING DAPP",
-            description: "A decentralized trading application which uses machine learning models to predict price movements.",
-            link: "https://github.com/sarthakmishra459",
+            name: "JOURNAL FINDER",
+            description: "An AI-powered tool that helps researchers identify the most suitable journals for publishing their work, based on topic relevance, impact factor, and submission criteria",
+            link: "https://github.com/sarthakmishra459/Journal-Finder-React",
             users: [{
-                name: "Manu Arora",
+                name: "Sarthak Mishra",
                 designation: "Founder, Algochurn",
-                image: "./trading.png",
-                badge: "Mentor",
+                image: "./journal.png",
+                badge: "Developer",
             }]
         },
         {
-            name: "Drive 3.0",
-            description: "A decentralized file sharing application which uses IPFS to store files and view data with details emmited on the blockchain.",
-            link: "https://drive3-0-one.vercel.app/",
+            name: "AI TEST FINDER",
+            description: "An AI-driven platform that intelligently matches candidates with the most relevant assessments based on targeted skill requirements, optimizing evaluation accuracy and hiring efficiency.",
+            link: "https://github.com/sarthakmishra459/AI-Powered-Assessment-Recommender",
             users: [{
-                name: "Manu Arora",
+                name: "Sarthak Mishra",
                 designation: "Founder, Algochurn",
-                image: "./drive.png",
+                image: "./assessment.png",
 
                 badge: "Mentor",
             }]
         },
         {
-            name: "CROWDFUNDING DAPP",
-            description: "A decentralized crowdfunding application powered by Polygon Matic which provides platform to fund users without any third party agent to ensure trust and privacy.",
+            name: "TRADING DAPP",
+            description: "A decentralized trading application which uses machine learning models to predict price movements.",
             link: "https://incognito-hand-6zh8.vercel.app/",
             users: [{
                 name: "Manu Arora",
                 designation: "Founder, Algochurn",
-                image: "./incognito.png",
+                image: "./trading.png",
 
                 badge: "Mentor",
             }]
         }
     ];
     const apps = ["https://github.com/sarthakmishra459", "https://drive3-0-one.vercel.app/", "https://incognito-hand-6zh8.vercel.app/"]
-    const tech = ["Next.Js", "Anchor", "Express.Js", "MongoDb", "Ethers.Js"];
+    const tech = ["Next.Js", "MongoDB", "React", "Javascript", "FastAPI"];
     const controls = useAnimation();
 
     const handleHover = () => {
@@ -101,7 +101,7 @@ function MoreWorks() {
                                     <p className="text-gray-600 text-3xl tracking-wide">
                                         {work.description}
                                     </p>
-                                    <a href="https://github.com/sarthakmishra459" target="_blank" rel="noopener noreferrer" className="text-[1rem] bg-[#B7AB98] hover:bg-[rgb(223,197,155)] w-24 h-11 flex justify-center items-center rounded-md my-4">
+                                    <a href={work.link} target="_blank" rel="noopener noreferrer" className="text-[1rem] bg-[#B7AB98] hover:bg-[rgb(223,197,155)] w-24 h-11 flex justify-center items-center rounded-md my-4">
                                         <button className="text-black">Visit Site</button>
                                     </a>
 
@@ -196,19 +196,19 @@ export const imgs = [
     {
         name: "Manu Arora",
         designation: "Founder, Algochurn",
+        image: "./journal.png",
+        badge: "Mentor",
+    },
+    {
+        name: "Manu Arora",
+        designation: "Founder, Algochurn",
+        image: "./assessment.png",
+        badge: "Mentor",
+    },
+    {
+        name: "Manu Arora",
+        designation: "Founder, Algochurn",
         image: "./trading.png",
-        badge: "Mentor",
-    },
-    {
-        name: "Manu Arora",
-        designation: "Founder, Algochurn",
-        image: "./drive.png",
-        badge: "Mentor",
-    },
-    {
-        name: "Manu Arora",
-        designation: "Founder, Algochurn",
-        image: "./incognito.png",
         badge: "Mentor",
     }
 ];

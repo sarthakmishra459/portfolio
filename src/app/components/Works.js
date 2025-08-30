@@ -4,7 +4,7 @@ import { motion, useAnimation } from 'framer-motion';
 
 
 function Works() {
-    const works = ["TRADING-DAPP", "ZUNE", "CROWDFUNDING DAPP"];
+    const works = ["JOURNAL FINDER", "AI ASSESSMENT RECOMMENDER", "PRICE FORECASTING APP"];
     const controls = [useAnimation(), useAnimation(), useAnimation()];
 
     useEffect(() => {
@@ -19,7 +19,7 @@ function Works() {
 
     const handleHover = (index) => {
         const defaultWidth = "60%";
-        const fullWidth = "100%";
+        const fullWidth = "60%";
         controls.forEach((control, i) => {
             if (i === index) {
                 control.start({
@@ -52,7 +52,7 @@ function Works() {
                     {works.map((work, index) => (
                         <div key={index} className="mb-4 ">
                             <motion.div
-                                className='md:text-[15vh]  text-4xl tracking-wide border border-2-[#B7AB98] md:leading-[11vw] leading-[6vh]'
+                                className='md:text-[11vh] text-4xl tracking-wide border border-2-[#B7AB98] md:leading-[11vw] leading-[6vh]'
                                 whileHover={{ backgroundColor: '#4ADE80', color: '#fff' }}
                                 animate={{
                                     ...controls[index],
@@ -64,7 +64,7 @@ function Works() {
                             >
                                 {work}
                                 <motion.div
-                                    className='line w-full h-1 bg-[#B7AB98]'
+                                    className='line  h-1 bg-[#B7AB98]'
                                     animate={controls[index]}
                                     initial={{ width: 0 }}
                                 />

@@ -13,7 +13,7 @@ function About() {
                 <div className='md:leading-[7vw] leading-[5vh] md:text-[6vw] font-[Times New Roman] font-bold mb-32 text-white text-[5vh]'>
                     <div className='mb-4 font-medium text-3xl md:text-left'>ABOUT ME {'()'}</div>
                     <ul className='flex flex-col items-center flex-start md:tracking-wider md:text-left'>
-                        <li>I also enjoy listening to <span className="md:text-green-400">{"{music}"}</span> and reading books{'.'}</li>
+                        <li>I also enjoy listening to <span className="md:text-[#B7AB98]">{"{music}"}</span> and reading books{'.'}</li>
                     </ul>
                 </div>
             </MaskContainer>

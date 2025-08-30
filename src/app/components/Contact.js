@@ -43,7 +43,7 @@ function Contact() {
             <div className="flex flex-col h-[40rem]">
                 <div className='grid grid-cols-2 md:gap-14 gap-6 mt-20'>
                     <div className='md:text-6xl' onClick={() => {
-                        window.open("https://www.linkedin.com/in/sarthak-mishra-53407125b")
+                        window.open("https://www.linkedin.com/in/mishra-sarthak-ram")
 
                     }} onMouseEnter={() => handleMouseEnter('Linkedin')} onMouseLeave={handleMouseLeave}>
                         {hoveredElement === 'Linkedin' ? <TypewriterEffectSmooth words={words1} /> : <a >LinkedIn</a>}
@@ -63,7 +63,7 @@ function Contact() {
                     }} onMouseEnter={() => handleMouseEnter('Instagram')} onMouseLeave={handleMouseLeave}>
                         {hoveredElement === 'Instagram' ? <TypewriterEffectSmooth words={words3} /> : <p>Instagram</p>}
                     </div>
-                    <div className='md:text-6xl font-normal tracking-widest'>Email<br></br><span className='md:text-3xl'>sarthakmishra459@gmail.com</span></div>
+                    <div className='md:text-6xl font-normal tracking-widest'>Email<br></br><span className='md:text-3xl'>sarthakmishra0059@gmail.com</span></div>
 
                 </div>
 
